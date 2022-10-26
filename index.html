@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="style.css">
+  <title>Form</title>
+</head>
+
+<body>
+  <section>
+    <form action="" class="account">
+
+      <h2>Create an Account</h2>
+      
+      <div class="row">
+        <label>
+          First Name
+          <input type="text" name="firstname">
+        </label>
+        <label>
+          Last Name
+          <input type="text" name="lastname">
+        </label>
+      </div>
+      
+      <div>
+        <label>
+          E-mail
+          <input type="email" name="email">
+        </label>
+        <p>We'll never share your email with anyone else</p>
+      </div>
+      
+      <div class="row left">
+        <label class="row">
+          <input type="radio" name="gender">
+          Male
+        </label>
+        <label class="row">
+          <input type="radio" name="gender">
+          Female
+        </label>
+      </div>
+      
+      <div class="row">
+        <label>
+          Country
+          <select name="country">
+            <option value="Spain">Spain</option>
+            <option value="France">France</option>
+            <option value="Italy">Italy</option>
+          </select>
+        </label>
+        <label>
+          City
+          <input type="text" name="city">
+        </label>
+      </div>
+
+      <input type="submit" value="Sign Up">
+
+    </form>
+
+    <p class="center">By clicking the 'Sign Up' button, you confirm that you accept our <br><a href="">Terms of Use</a> and <a href="">Privacy Police</a></p>
+    <hr>
+    <p class="center medium">
+      Have an account?&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="">Log in</a>
+    </p>
+  </section>
+  
+  <section>
+    <form action="" class="profile">
+      <h2>Profile</h2>
+      
+      <div class="row">
+        <img src="images\profile-picture.jpg" alt="profile picture">
+        <div>
+          <label>
+            <input type="file" name="file">
+          </label>
+          <p>Up to 1 MB (300x300 px)</p>
+        </div>
+        <button>
+          <i class="material-icons">camera_alt</i>
+        </button>
+        <button>
+          <i class="material-icons">delete</i>
+        </button>
+      </div>
+
+      <div class="row">
+        <label>
+          Name
+          <input type="text" name="name">
+        </label>
+        <label>
+          E-mail
+          <input type="email" name="email">
+        </label>
+      </div>
+
+      <div class="row">
+        <label>
+          Country
+          <select name="country">
+            <option value="Spain">Spain</option>
+            <option value="France">France</option>
+            <option value="Italy">Italy</option>
+          </select>
+        </label>
+        <label>
+          City
+          <input type="text" name="firstname">
+        </label>
+      </div>
+
+      <div class="row">
+        <label>
+          Zip Code
+          <input type="text" name="zip-code">
+        </label>
+        <label>
+          Phone Number
+          <input type="tel" name="phone-number">
+        </label>
+      </div>
+
+      <input type="submit" value="Update" id="update">
+
+    </form>
+  </section>
+</body>
+</html>
